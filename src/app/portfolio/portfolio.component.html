@@ -1,1 +1,7 @@
-<p>portfolio works!</p>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-mb-5 mb4" *ngFor="let project of projects" style="max-width: 300px; max-height: 300px;">
+			<app-project-card [project]="project"></app-project-card>
+		</div>
+	</div>
+</div>
